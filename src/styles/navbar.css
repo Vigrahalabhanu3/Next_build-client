@@ -1,0 +1,103 @@
+/* Navbar - Clean App Navigation */
+
+.navbar {
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24px;
+  border-bottom: 1px solid #e8e7f0;
+  background: #ffffff;
+  flex-shrink: 0;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.navbar-brand {
+  font-family: "Bree Serif", serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: #1a1a2e;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.navbar-brand-mark {
+  color: #6366f1;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 4px;
+}
+
+.navbar-link {
+  font-size: 14px;
+  font-weight: 500;
+  padding: 7px 16px;
+  border-radius: 8px;
+  color: #8b8ba3;
+}
+
+.navbar-link:hover {
+  color: #6366f1;
+  background: #f3f2fd;
+}
+
+.navbar-link.active {
+  background: #6366f1;
+  color: #ffffff;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.navbar-user-badge {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #ede9fe;
+  color: #6366f1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.navbar-username {
+  font-size: 14px;
+  font-weight: 500;
+  color: #1a1a2e;
+}
+
+.navbar-logout {
+  font-size: 13px;
+  font-weight: 500;
+  color: #8b8ba3;
+  background: none;
+  border: 1px solid #e8e7f0;
+  padding: 6px 14px;
+  border-radius: 8px;
+}
+
+.navbar-logout:hover {
+  color: #6366f1;
+  border-color: #6366f1;
+}
+
+@media (max-width: 600px) {
+  .navbar-username {
+    display: none;
+  }
+}
